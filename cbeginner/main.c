@@ -34,6 +34,8 @@
  */
 int main()
 {
+    //Switch Statements
+
     //Building a Better Calculator
 
     double num1;
@@ -43,12 +45,23 @@ int main()
     printf("Enter a number: ");
     scanf("%lf",&num1);
     printf("Enter operator: ");
-    scanf("%c",&op);
+    scanf(" %c",&op);
 
     printf("Enter a number: ");
     scanf("%lf",&num2);
 
-    printf("%f %f %c",num1,num2,op);
+    //printf("%f %f %c",num1,num2,op);
+    if(op == '+'){
+        printf("%f",num1+num2);
+    }else if(op == '-'){
+        printf("%f",num1-num2);
+    }else if(op == '*'){
+        printf("%f",num1*num2);
+    }else if(op == '/'){
+        printf("%f",num1/num2);
+    }else{
+        printf("invalid operator");
+    }
 
 
     //If Statements
@@ -201,6 +214,7 @@ int main()
 (2:07:11) Building a Better Calculator
 
 (2:14:51) Switch Statements
+
 (2:21:27) Structs
 (2:29:43) While Loops
 (2:37:48) Building a Guessing Game
