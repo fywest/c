@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* void SayHi(char name[],int age)
  * {
@@ -32,36 +33,236 @@
  *     return result;
  *  }
  */
+
+/*  struct Student{
+ *     char name[50];
+ *     char major[50];
+ *     int age;
+ *     double gpa;
+ *  };
+ */
+
 int main()
 {
+    //Reading Files
+/*     char line[255];
+ *     FILE * fpointer = fopen("employees.txt","r");
+ *
+ *     fgets(line, 255,fpointer);
+ *     printf("%s",line);
+ *
+ *     fgets(line, 255,fpointer);
+ *     printf("%s",line);
+ *
+ *     fgets(line, 255,fpointer);
+ *     printf("%s",line);
+ *
+ *     fgets(line, 255,fpointer);
+ *     printf("%s",line);
+ *
+ *     fgets(line, 255,fpointer);
+ *     printf("%s",line);
+ *
+ *     fclose(fpointer);
+ */
+
+    //Writing Files
+/*     FILE * fpointer = fopen("employees.txt","w");
+ *
+ *     fprintf(fpointer,"Jim, Salesman\nPam, Receptionist\nOscar, account");
+ *     fclose(fpointer);
+ */
+
+    //Dereferencing Pointers
+/*      int age=30;
+ *      int * pAge = &age;
+ *
+ *      printf("%p\t%d\t%d\t%p\t%d", pAge,*pAge,age,&age,*&age);
+ */
+
+    //Pointers
+/*     int age=30;
+ *     int * pAge = &age;
+ *
+ *     double gpa = 3.4;
+ *     double * pGpa = &gpa;
+ *
+ *     char grade = 'A';
+ *     char * pGrade = &grade;
+ *
+ *
+ *     printf("age's memory address: %p\n",&age);
+ *     printf("pAge:%p\tAge:%d\n",pAge,age);
+ *     printf("pGpa:%p\tgpa:%f\n",pGpa,gpa);
+ *     printf("pGrade:%p\tgrade:%c",pGrade,grade);
+ */
+
+    //Memory Addresses
+
+/*     int age = 30;
+ *     double gpa = 3.4;
+ *     char grade = 'A';
+ *
+ *     printf("age: %p\ngpa: %p\ngrade: %p",&age,&gpa,&grade);
+ */
+
+    //2D Arrays & Nested Loops
+
+/*     int nums[3][2] = {
+ *                     {1,2},
+ *                     {3,4},
+ *                     {5,6}
+ *                     };
+ *
+ *     printf("%d\n",nums[0][0]);
+ *
+ *     int i,j;
+ *     for(i = 0; i < 3; i++){
+ *         for(j = 0;j < 2; j++){
+ *             printf("%d,",nums[i][j]);
+ *         }
+ *         printf("\n");
+ *     }
+ */
+    //For Loops
+/*     int i = 1;
+ *     while(i <= 5){
+ *         printf("%d\n",i);
+ *         i++;
+ *     }
+ */
+/*     int luckyNumber[]={4,8,15,16,23,42};
+ *     int i;
+ *     for(i=0;i < 6;i++){
+ *
+ *         printf("%d\t",i);
+ *         printf("%d\n",luckyNumber[i]);
+ *
+ *     }
+ */
+    //Building a Guessing Game
+/*     int secretNumber=5;
+ *     int guess;
+ *     int guessCount=0;
+ *     int guessLimit=3;
+ *     int outOfGuesses=0;
+ *
+ *     while(guess!=secretNumber && outOfGuesses == 0){
+ *         if(guessCount < guessLimit)
+ *             {
+ *                 printf("Enter a number");
+ *                 scanf("%d",&guess);
+ *                 guessCount++;
+ *
+ *             }else{
+ *             outOfGuesses = 1;
+ *             }
+ *
+ *
+ *     }
+ *     if(outOfGuesses == 1){
+ *         printf("Out of guesses");
+ *     }
+ *     else{
+ *             printf("You Win!");
+ *     }
+ */
+
+    //While Loops
+/*     int index = 1;
+ *     while(index < 5){
+ *             printf("%d\n",index);
+ *             index++;
+ *
+ *     }
+ *
+ *     do{
+ *             printf("%d\n",index);
+ *             index++;
+ *
+ *     }while(index < 10);
+ */
+
+    //Structs
+/*     struct Student student1;
+ *     student1.age=22;
+ *     student1.gpa=3.2;
+ *     strcpy(student1.name,"Jim");
+ *     strcpy(student1.major,"Business");
+ *
+ *     printf("%s\n",student1.name);
+ *     printf("%s\n",student1.major);
+ *     printf("%d\n",student1.age);
+ *     printf("%f\n",student1.gpa);
+ *
+ *     struct Student student2;
+ *     student2.age=20;
+ *     student2.gpa=2.5;
+ *     strcpy(student2.name,"Pam");
+ *     strcpy(student2.major,"Art");
+ *
+ *     printf("%s\n",student2.name);
+ *     printf("%s\n",student2.major);
+ *     printf("%d\n",student2.age);
+ *     printf("%f\n",student2.gpa);
+ */
+
     //Switch Statements
+/*     char grade = 'A';
+ *     switch(grade){
+ *     case 'A':
+ *         printf("you did great !");
+ *         break;
+ *     case 'B':
+ *         printf("You did alright!");
+ *         break;
+ *     case 'C':
+ *         printf("You did poorly");
+ *         break;
+ *     case 'D':
+ *         printf("You did very bad");
+ *         break;
+ *     case 'F':
+ *         printf("You failed");
+ *         break;
+ *     default:
+ *         printf("Invalid Grade");
+ *
+ *
+ *     }
+ */
 
     //Building a Better Calculator
 
-    double num1;
-    double num2;
-    char op;
-
-    printf("Enter a number: ");
-    scanf("%lf",&num1);
-    printf("Enter operator: ");
-    scanf(" %c",&op);
-
-    printf("Enter a number: ");
-    scanf("%lf",&num2);
-
-    //printf("%f %f %c",num1,num2,op);
-    if(op == '+'){
-        printf("%f",num1+num2);
-    }else if(op == '-'){
-        printf("%f",num1-num2);
-    }else if(op == '*'){
-        printf("%f",num1*num2);
-    }else if(op == '/'){
-        printf("%f",num1/num2);
-    }else{
-        printf("invalid operator");
-    }
+/*     double num1;
+ *     double num2;
+ *     char op;
+ *
+ *     printf("Enter a number: ");
+ *     scanf("%lf",&num1);
+ *     printf("Enter operator: ");
+ *     scanf(" %c",&op);
+ *
+ *     printf("Enter a number: ");
+ *     scanf("%lf",&num2);
+ *
+ *     //printf("%f %f %c",num1,num2,op);
+ *     if(op == '+'){
+ *         printf("%f",num1+num2);
+ *     }else if(op == '-'){
+ *         printf("%f",num1-num2);
+ *     }else if(op == '*'){
+ *         printf("%f",num1*num2);
+ *     }else if(op == '/'){
+ *         if (num2==0){
+ *             printf("divide can not be zero");
+ *             return 1;
+ *         }
+ *         printf("%f",num1/num2);
+ *     }else{
+ *         printf("invalid operator");
+ *     }
+ */
 
 
     //If Statements
@@ -198,23 +399,14 @@ int main()
 (0:52:20) Comments
 (0:56:00) Constants
 1:00:13) Getting User Input
-
 (1:12:08) Building a Basic Calculator
-
 (1:17:43) Building a Mad Libs Game
-
 (1:26:29) Arrays
-
 (1:36:44) Functions
-
 (1:45:37) Return Statement
-
 (1:53:21) If Statements
-
 (2:07:11) Building a Better Calculator
-
 (2:14:51) Switch Statements
-
 (2:21:27) Structs
 (2:29:43) While Loops
 (2:37:48) Building a Guessing Game
