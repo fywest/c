@@ -3,9 +3,51 @@
 
 using namespace std;
 
+/* void sayHi(string name, int age){
+ *         cout << "Hello User: " << name <<" "<< age;
+ *
+ *     }
+ *
+ * double cube(double num){
+ *     double result = num * num * num;
+ *     return result;
+ * }
+ */
+
 int main()
 {
+    //(1:47:15) If Statements (con't)
+
+    //(1:35:22) If Statements
+/*     bool isMale = true;//false;
+ *     bool isTall = false;//true;
+ *     if(isMale && isTall){
+ *         cout << "You are a tall male";
+ *     }
+ *     else if(isMale && !isTall){
+ *
+ *         cout << "You are a short male";
+ *     }
+ *     else if(!isMale && isTall){
+ *
+ *         cout << "You are a not male and tall";
+ *     }
+ *     else{
+ *         cout << "You are not tall and not a male";
+ *     }
+ */
+
+    //(1:29:47) Return Statement
+/*     double answer = cube(5.0);
+ *     cout << answer ;
+ */
     //(1:20:03) Functions
+/*     cout << "top\t";
+ *     sayHi("Mika", 20);
+ *     cout << "\tbottom";
+ *     sayHi("Tom", 30);
+ */
+
 
 
     //(1:13:45) Arrays
@@ -160,8 +202,11 @@ Contents
 (1:20:03) Functions
 
 (1:29:47) Return Statement
+
 (1:35:22) If Statements
+
 (1:47:15) If Statements (con't)
+
 (1:55:58) Building a Better Calculator
 (2:02:20) Switch Statements
 (2:10:47) While Loops
