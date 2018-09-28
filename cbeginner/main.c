@@ -336,17 +336,22 @@ int main()
  *
  *     char grade1;
  *     printf("Enter your grade1: ");
- *     scanf("%c",&grade1);
+ *     scanf(" %c",&grade1);
  *     printf("Your grade is %c\n",grade1);
  *
  *     char name[20];
  *     printf("Enter your name: ");
- * //    scanf("%s",name);//
- *     fgets(name,20,stdin);//li li-space is ok
- *     printf("Your grade is %s\n",name);
+ *     scanf("%s",name);//
+ *     //fgets(name,20,stdin);//li li-space is ok
+ *     printf("Your name is %s\n",name);
  */
 
 
+/*     char name[20];
+ *     printf("Enter your name: ");
+ *     fgets(name,20,stdin);//li li-space is ok
+ *     printf("Your name is %s\n",name);
+ */
 
 
 /*     //Constants
