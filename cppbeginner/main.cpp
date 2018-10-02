@@ -98,11 +98,145 @@ using namespace std;
  *  };
  */
 
+/*
+ *   class Book{
+ *       public:
+ *           string title;
+ *           string author;
+ *           int pages;
+ *
+ *           Book(){
+ *             title = "no title";
+ *             author = "no author";
+ *             pages = 0;
+ *           }
+ *           Book(string aTitle,string aAuthor, int aPages){
+ *             title = aTitle;
+ *             author = aAuthor;
+ *             pages = aPages;
+ *           }
+ *
+ *       void print(){
+ *           cout << title << "\n" << author << "\n" << pages <<endl;
+ *           };
+ *         };
+ */
+
+/* class Student{
+ * public:
+ *     string name;
+ *     string major;
+ *     double gpa;
+ *     Student(string aName, string aMajor, double aGpa){
+ *         name = aName;
+ *         major = aMajor;
+ *         gpa = aGpa;
+ *     }
+ *
+ *     bool hasHonors(){
+ *         if(gpa >= 3.5){
+ *             return true;
+ *         }else{
+ *             return false;
+ *         }
+ *     }
+ * };
+ */
+
+/*  class Movie{
+ *     private:
+ *         string rating;
+ *     public:
+ *         string title;
+ *         string director;
+ *
+ *         Movie(string aTitle, string aDirector, string aRating){
+ *             title = aTitle;
+ *             director = aDirector;
+ *             setRating(aRating);
+ *         }
+ *
+ *         void setRating(string aRating){
+ *
+ *             if(aRating == "G"||aRating == "PG"||aRating == "PG-13"||aRating == "NR"){
+ *
+ *                 rating = aRating;
+ *                 }else{
+ *                     rating = "NR";
+ *                 }
+ *
+ *         }
+ *
+ *         string getRating(){
+ *             return rating;
+ *         }
+ *
+ *  };
+ */
+
+/*  class Chef{
+ *     public:
+ *         void makeChicken(){
+ *             cout << "The chef makes chicken" << endl;
+ *         }
+ *
+ *         void makeSalad(){
+ *             cout << "The chef makes salad" << endl;
+ *         }
+ *
+ *         void makeSpecialDish(){
+ *             cout << "The chef makes bbq ribs" << endl;
+ *         }
+ *  };
+ *
+ *  class ItalianChef:public Chef{
+ *     public: void makePasta(){
+ *             cout << "The chef make pasta" << endl;
+ *         };
+ *     void makeSpecialDish(){
+ *             cout << "The chef makes chicken parm" << endl;
+ *         };
+ *     };
+ */
 int main()
 {
+    //(3:54:04) Inheritance
+
+/*     Chef chef;
+ *     chef.makeChicken();
+ *     chef.makeSpecialDish();
+ *
+ *     ItalianChef italianChef;
+ *     italianChef.makeChicken();
+ *     italianChef.makePasta();
+ *     italianChef.makeSpecialDish();
+ */
+    //(3:41:43) Getters & Setters
+
+/*         Movie avengers("The avengers", "Joss Whedon", "PG=13");
+ *         avengers.setRating("PG-13");
+ *         cout << avengers.getRating();
+ */
+
+    //(3:34:41) Object Functions
+
+/*     Student student1("Jim", "Business", 2.4);
+ *     Student student2("Pam", "Art", 3.6);
+ *
+ *     cout << student1.hasHonors() << endl;
+ *     cout << student2.hasHonors() << endl;
+ */
     //(3:25:40) Constructor Functions
 
-
+/*       Book book;
+ *       book.print();
+ *
+ *       Book book1("Harry Potter","JK Rowling",500);
+ *       book1.print();
+ *
+ *       Book book2("Lord of the Ring","Tolein",700);
+ *       book2.print();
+ */
 
     //(3:13:26) Classes & Objects
 
@@ -462,7 +596,9 @@ Contents
 (3:25:40) Constructor Functions
 
 (3:34:41) Object Functions
+
 (3:41:43) Getters & Setters
+
 (3:54:04) Inheritance
 
 */
